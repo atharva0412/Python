@@ -1,0 +1,20 @@
+income = int(input("Enter income: "))
+if(income < 150000):
+    tax = 0
+    actual_income = income
+    print("Your income is ",actual_income, "& No tax")
+    
+elif(income >= 150001 and income <= 300000):
+    tax = 0.10 * income
+    actual_income = income - tax
+    print("Your income is",income, "and after charging 10% tax, total tax amount is", tax, ", after tax the actual income is ",actual_income)
+    
+elif(income >= 300001 and income <= 500000):
+    tax = 0.20 * income
+    actual_income = income - tax
+    print("Your income is",income, "and after charging 20% tax, total tax amount is", tax, "after tax actual income is ",actual_income)
+    
+elif(income >= 500001):
+    tax = 0.30 * income
+    actual_income = income - tax
+    print("Your income is",income, "and after charging 30% tax, total tax amount is", tax, "after tax actual income is ",actual_income)
