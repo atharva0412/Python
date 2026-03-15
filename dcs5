@@ -1,0 +1,10 @@
+n = int(input("Enter the binary number: "))
+dn = 0
+place = 0
+
+while n > 0:
+    remainder = n % 10
+    dn = dn + remainder * (2**place)
+    n = n//10
+    place = place + 1
+print("The decimal number is:", dn)
