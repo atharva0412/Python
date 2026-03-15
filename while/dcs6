@@ -1,0 +1,10 @@
+n = int(input("Enter the decimal number: "))
+on = 0
+place = 1
+
+while n > 0:
+    remainder = n % 8
+    on = on + remainder * place
+    n = n//8
+    place = place * 10
+print("The octal number is:", on)
