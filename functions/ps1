@@ -1,0 +1,6 @@
+def diff(x, y):
+    return x - y
+num1 = int(input("Enter bigger number:"))
+num2 = int(input("Enter smaller number:"))
+operation = diff
+print(operation(num1, num2))
